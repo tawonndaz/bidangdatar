@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_mainpersegi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Luas dan Keliling Persegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/judul"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="SISI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="48dp"
+        android:id="@+id/panjang"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/sisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_alignStart="@+id/judul"
+        android:layout_alignLeft="@+id/judul"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="Masukkan Sisi"
+        android:inputType="number" />
+
+    <Button
+        android:text="HASIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sisi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/button" />
+
+    <TextView
+        android:id="@+id/luas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:text="luas :"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/hasilluas"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/luas"
+        android:layout_alignLeft="@+id/luas"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:padding="3dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/keliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/luas"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="keliling :"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/hasilkeliling"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hasilluas"
+        android:layout_alignStart="@+id/keliling"
+        android:layout_alignLeft="@+id/keliling"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:padding="3dp"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
